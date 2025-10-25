@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TOWN Team</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>س
+  <header>
+    <div class="logo">
+      <h1>Palestine Action</h1>
+    </div>
+  </header>
+
+  <aside class="cart" id="cart">
+    <h3>سلة المشتريات</h3>
+    <div id="cart-items"></div>
+    <div class="total">الإجمالي: <span id="total">0</span> جنيه</div>
+    <button class="checkout-btn" onclick="openPopup()">إتمام الطلب</button>
+  </aside>
+
+  <main class="container" id="products"></main>
+
+  <footer class="footer">
+    <div>تواصل معنا</div>
+    <div class="socials">
+      <a href="https://wa.me/201062970993" target="_blank">واتساب</a>
+      <a href="https://www.instagram.com/ahmed_abo_ellail?igsh=MTM4d2t0MmxpNnJ1eg==" target="_blank">انستجرام</a>
+      <a href="https://www.facebook.com/share/1ABZezVgFd/" target="_blank">فيسبوك</a>
+    </div>
+    <div style="margin-top:12px;color:#777">© 2025 Palestine Action</div>
+  </footer>
+
+  <!-- نافذة تأكيد الطلب -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h3>تأكيد الطلب</h3>
+      <input id="cust-name" placeholder="الاسم الكامل" />
+      <input id="cust-address" placeholder="العنوان الكامل" />
+      <input id="cust-phone" placeholder="رقم الهاتف" />
+      <div style="display:flex;gap:8px;margin-top:10px;justify-content:center">
+        <button class="btn" onclick="checkout()">تأكيد وإرسال عبر واتساب</button>
+        <button class="btn-muted" onclick="closePopup()">إلغاء</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- نافذة تفاصيل المنتج -->
+  <div class="details-popup" id="details-popup">
+    <div class="details-content" id="details-content"></div>
+  </div>
+
+  <script src="script.jS"></script>
+</body>
+</html>
